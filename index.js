@@ -1,10 +1,10 @@
 const express = require('express');
-const api = require('./routes');
+const tags = require('./routes/tags');
 
 const app = express();
 const port = 8000;
 
-app.use('/api', api);
+app.use('/api/tags', tags);
 
 app.listen(port, (err) => {
   if (err) {
